@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="verdeOscuro">#0D6E6E</color>
+    <color name="verdeMedio">#4a9d9c</color>
+    <color name="azulClaro">#afffff</color>
+    <color name="coral">#FF3D3D</color>
+    <color name="naranjaClaro">#ffe0c8</color>
+    <color name="marinoOscuro">#0D1F2D</color>
+    <color name="marino">#1d2e3d</color>
+    <color name="marinoClaro">#354656</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="grisClaro">#e0e0e0</color>
+    <color name="verdeTxtTarjetas">#25AB95</color>
+</resources>

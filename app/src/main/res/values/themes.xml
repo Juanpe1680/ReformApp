@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ReformApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimaryDark">@color/verdeOscuro</item>
+        <item name="android:windowSplashScreenBackground">@color/verdeOscuro</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+    </style>
+
+    <style name="Theme.ReformApp" parent="Base.Theme.ReformApp" />
+</resources>

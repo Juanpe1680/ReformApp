@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1F2D"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_fondoObra"
+        android:layout_width="411dp"
+        android:layout_height="208dp"
+        android:src="@drawable/fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_logoApp"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logob" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cinzel_font"
+        android:text="@string/Login_Eslogan"
+        android:textColor="#e0e0e0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logoApp" />
+
+    <TextView
+        android:id="@+id/tv_LoginTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/cinzel_font"
+        android:text="@string/Login_Titulo"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_LoginDNI"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:fontFamily="@font/jackinpunt"
+        android:hint="@string/Login_Hint_DNI"
+        android:inputType="text"
+        android:textColor="@color/azulClaro"
+        android:textColorHint="#e0e0e0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_LoginTitulo" />
+
+    <EditText
+        android:id="@+id/et_LoginPass"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/jackinpunt"
+        android:hint="@string/Login_Hint_Pass"
+        android:inputType="textPassword"
+        android:textColor="@color/azulClaro"
+        android:textColorHint="#e0e0e0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_LoginDNI" />
+
+    <Button
+        android:id="@+id/bt_LoginIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4a9d9c"
+        android:fontFamily="@font/cinzel_font"
+        android:onClick="iniciarSesion"
+        android:text="@string/Login_ButtonIniciar"
+        android:textColor="#afffff"
+        android:textSize="16sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_LoginPass" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_LoginIniciarSesion">
+
+        <TextView
+            android:id="@+id/tv_LoginPreguntaCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cinzel_font"
+            android:text="@string/Login_PreguntaCuenta"
+            android:textColor="#e0e0e0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="   " />
+
+        <TextView
+            android:id="@+id/tv_LoginRegistrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cinzel_font"
+            android:text="@string/Login_BtRegistrate"
+            android:textColor="#FF3D3D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

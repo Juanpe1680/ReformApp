@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">ReformApp</string>
+
+    <!-- String de ExplicacionActivity (Es la 1a activity que se muestra) -->
+    <string name="Explicacion_Saltar">Saltar</string>
+    <string name="Explicacion_Titulo">¿Qué es ReformApp?</string>
+    <string name="Explicacion_Explicacion">ReformApp es un app dirigida a usuarios y profesionales
+    de la construcción para facilitar el contacto y gestionar reformas.</string>
+    <string name="Explicacion_Siguiente">Siguiente</string>
+
+    <!-- String de ExplicacionPt2Activity -->
+    <string name="Explicacion2_Titulo">¿Para qué sirve la App?</string>
+    <string name="Explicacion2_Frase1">Gestionar tus reformas desde cualquier lugar.</string>
+    <string name="Explicacion2_Frase2">Tener varios profesionales de distintas ramas en un mismo lugar.</string>
+    <string name="Explicacion2_Frase3">Contactar con profesionales y consultar su disponibilidad.</string>
+    <string name="Explicacion2_Frase4">Permitir a profesionales gestionar sus trabajos.</string>
+
+    <!-- String de Login Activity -->
+    <string name="Login_Titulo">Iniciar sesión</string>
+    <string name="Login_Eslogan">\"Reforma hoy, disfruta siempre\"</string>
+    <string name="Login_Hint_DNI">DNI/NIE o CIF</string>
+    <string name="Login_Hint_Pass">Contraseña</string>
+    <string name="Login_ButtonIniciar">Iniciar Sesión</string>
+    <string name="Login_PreguntaCuenta">¿No tienes cuenta?</string>
+    <string name="Login_BtRegistrate">   Regístrate</string>
+    <string name="Login_Alert">¿Eres un usuario o una empresa?</string>
+    <string name="Login_Usuario">USUARIO</string>
+    <string name="Login_Empresa">EMPRESA</string>
+
+
+    <!-- String de RegistroUsuarios Activity -->
+    <string name="RegistroU_Titulo">Usuarios</string>
+    <string name="RegistroU_Hint_Nombre">Nombre:</string>
+    <string name="RegistroU_Hint_Apellidos">Apellidos:</string>
+    <string name="RegistroU_Hint_DNI">DNI/NIE:</string>
+    <string name="RegistroU_Hint_Telf">Número de teléfono:</string>
+    <string name="RegistroU_Hint_Pass">Contraseña:</string>
+    <string name="RegistroU_Hint_RepPass">Repite tu contraseña:</string>
+    <string name="RegistroU_BtRegistro">Registrar</string>
+
+    <!-- String de RegistroEmpresas Activity -->
+    <string name="RegistroE_Titulo">Empresas</string>
+    <string name="RegistroE_Hint_Nombre">Nombre de empresa:</string>
+    <string name="RegistroE_Hint_CIF">CIF/DNI/NIE:</string>
+    <string name="RegistroE_Hint_Telf">Número de teléfono:</string>
+    <string-array name="RegistroE_Tipos">
+        <item>Especialidad:</item>
+        <item>Albañil</item>
+        <item>Electricista</item>
+        <item>Cristalero</item>
+        <item>Fontanero</item>
+        <item>Yesaire/Yesero</item>
+    </string-array>
+    <string name="RegistroE_Hint_DirLocalidad">Dirección/Localidad:</string>
+    <string name="RegistroE_Disponibilidad">Disponibilidad:</string>
+    <string name="RegistroE_Hint_PassE">Contraseña:</string>
+    <string name="RegistroE_Hint_RepPassE">Repite tu contraseña:</string>
+    <string name="RegistroE_BtImagen">Logo de empresa:</string>
+
+    <!-- String de Menu Usuarios -->
+    <string name="UMenu_Albaniles">ALBAÑILES</string>
+    <string name="UMenu_Cristaleros">CRISTALEROS</string>
+    <string name="UMenu_Electricistas">ELECTRICISTAS</string>
+    <string name="UMenu_Fontaneros">FONTANEROS</string>
+    <string name="UMenu_Yeseros">YESEROS</string>
+    <string name="UMenu_MiEmpresa">MI EMPRESA</string>
+    <string name="UMenu_Ajustes">MI PERFIL</string>
+    <string name="UMenu_Salir">CERRAR SESIÓN</string>
+    <string name="UMenu_CerrarSesion">¿Está seguro que quiere cerrar sesión?</string>
+
+    <!-- String empresaSeleccionada Activity -->
+    <string name="ESel_NombreEmpresa">Empresa:</string>
+    <string name="ESel_EspecialidadEmpresa">Especialidad:</string>
+    <string name="ESel_TelefonoEmpresa">Teléfono:</string>
+    <string name="ESel_DirLocalidadEmpresa">Dirección:</string>
+    <string name="ESel_Ayuda">Pulse sobre los iconos para acceder a la ubicación de la empresa, para
+        comenzar una conversación o para ver su disponibilidad.</string>
+
+    <!-- String Ajustes Usuario -->
+    <string name="Ajustes_Boton">Modificar</string>
+    <string name="Ajustes_NuevaPass">Nueva Contraseña:</string>
+    <string name="Ajustes_RepNuevaPass">Repita su contraseña:</string>
+    <string name="Ajustes_AlertTitulo">Información</string>
+    <string name="Ajustes_AlertMensaje">Modifique únicamente los datos quiera cambiar y pulse el
+    botón para ejecutar los cambios. Si solo desea modificar la contraseña borre los datos y
+    escriba su nueva contraseña.</string>
+    <string name="Ajustes_AlertVacio">Introduzca los campos a modificar, por favor.</string>
+    <string name="Ajustes_AlertModificacion">Estos son los datos que va a modificar. ¿Son Correctos?.</string>
+    <string name="Ajustes_AlertModOK">Los datos han sido modificados correctamente.</string>
+    <string name="Ajustes_AlertTelf">No es posible usar el campo que ha modificado.</string>
+    <string name="Ajustes_AlertErrorModUser">No se ha podido modificar el usuario. Inténtelo de nuevo más adelante.</string>
+    <string name="Ajustes_AlertErrorModPass">No se ha podido modificar la contraseña. Inténtelo de nuevo más adelante.</string>
+    <!-- String de Ajustes Empresa -->
+    <string name="AjustesE_AlertMensaje">Si desea modificar sus datos y el logo de su empresa cambie
+        los datos y pulse sobre el logo para cambiarlo. Si solo desea modificar la contraseña borre
+        sus datos y escriba su nueva contraseña y pulse el botón.</string>
+
+    <!-- String de Menu Empresas -->
+    <string name="EMenu_Cif">CIF:</string>
+    <string name="EMenu_Telf">Telf:</string>
+    <string name="EMenu_Dir">Dirección:</string>
+    <string name="EMenu_ModUser">Modo Usuario</string>
+    <string name="EMenu_Calendario">Calendario</string>
+    <string name="EMenu_Salir">Salir</string>
+
+
+    <!-- String de alertas (Faltan datos, contraseñas distintas -->
+    <string name="Login_AlertFaltanDatos">Rellene los campos para iniciar sesión, por favor.</string>
+    <string name="Login_AlertUsuario">Introduzca un formato de usuario válido para iniciar sesión.</string>
+    <string name="Login_AlertDatos">El usuario introducido es incorrecto</string>
+    <string name="Login_AlertIntent">Error al capturar los datos de registro</string>
+    <string name="Login_AlertUserYpass">El usuario o la contraseña son incorrectos</string>
+
+    <string name="RegistroU_AlertFaltanDatos">Rellene los campos para registrarse, por favor.</string>
+    <string name="RegistroU_AlertRegistroOK">Usuario registrado correctamente.</string>
+    <string name="RegistroU_AlertDatosIncorrectos">Introduzca los datos correctamente, por favor.</string>
+    <string name="RegistroU_AlertPassDistintas">Las contraseñas no coinciden.</string>
+    <string name="RegistroU_AlertUsuarioExiste">Ya hay un usuario registrado con ese teléfono</string>
+
+    <string name="RegistroE_AlertInicio">Al registrarse como empresa tendrá acceso al apartado de usuarios
+    para solicitar servicios, por lo que no será necesario registrarse de nuevo como usuario.</string>
+    <string name="RegistroE_AlertErrorImagen">Error al obtener imagen</string>
+    <string name="RegistroE_AlertImagen">No ha seleccionado un logo para su empresa</string>
+    <string name="RegistroE_AlertEspecialidad">Seleccione una especialidad para su empresa, por favor.</string>
+    <string name="RegistroE_AlertUsuarioExiste">Ya hay un usuario registrado con ese DNI-NIE-CIF o teléfono</string>
+
+    <string name="MenuE_AlertFechas">No se han podido registras las fechas seleccionadas</string>
+
+
+    <!-- String de titulos de alert -->
+    <string name="TituloAlert_Error">Error</string>
+
+
+</resources>

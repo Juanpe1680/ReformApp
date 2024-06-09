@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EstiloCalendarioEmpresa" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- Color para el fondo y los días seleccionados (un poco mas claros -->
+        <item name="colorSurface">@color/verdeMedio</item>
+        <!-- Color de texto del mes y año, flechas, circunferencia y color de los días (el boton de aceptar sin seleccionar fecha) -->
+        <item name="colorOnSurface">@color/white</item>
+        <!-- CAMBIA EL COLOR DEL BOTON DE CANCELAR Y DEL BOTON DE ACEPTAR CUANDO SE HAN SELECCIONADO FECHAS, DE LA SELECCION DE FECHAS Y CUADRADO DEL CALENDARIO -->
+        <item name="colorPrimary">@color/verdeMedio</item>
+        <!-- Color de los números de los días seleccionados -->
+        <item name="colorOnPrimary">@color/blanco</item>
+    </style>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.AppTheme.MaterialDatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- Establece los estilos para el layout del calendario (oculta los elementos del header) -->
+        <item name="materialCalendarHeaderToggleButton">@style/Widget.AppTheme.MaterialCalendar.HeaderToggleButton</item>
+        <item name="materialCalendarHeaderLayout">@style/Widget.AppTheme.MaterialCalendar.HeaderLayout</item>
+        <item name="materialCalendarHeaderTitle">@style/Widget.AppTheme.MaterialCalendar.HeaderTitle</item>
+        <item name="materialCalendarHeaderSelection">@style/Widget.AppTheme.MaterialCalendar.HeaderSelection</item>
+
+        <item name="materialButtonStyle">@null</item> <!-- Deshabilita el estilo predeterminado de los botones -->
+        <item name="android:windowNoTitle">true</item> <!-- Oculta el titulo -->
+        <item name="android:windowActionBar">false</item> <!-- Oculta la barra de accion -->
+
+        <!-- Color para el fondo y los días seleccionados (un poco mas claros -->
+        <item name="colorSurface">@color/verdeMedio</item>
+        <!-- Color de texto del mes y año, flechas, circunferencia y color de los días (el boton de aceptar sin seleccionar fecha) -->
+        <item name="colorOnSurface">@color/white</item>
+        <!-- CAMBIA EL COLOR DEL BOTON DE CANCELAR Y DEL BOTON DE ACEPTAR CUANDO SE HAN SELECCIONADO FECHAS, DE LA SELECCION DE FECHAS Y CUADRADO DEL CALENDARIO -->
+        <item name="colorPrimary">@color/verdeMedio</item>
+        <!-- Color de los números de los días seleccionados -->
+        <item name="colorOnPrimary">@color/blanco</item>
+        <!-- Pone el estilo del color del fondo del calendario al boton de ACEPTAR (no se ve) -->
+        <item name="buttonBarPositiveButtonStyle">@style/EstiloAceptar</item>
+        <item name="buttonBarNegativeButtonStyle">@style/EstiloCancelar</item>
+    </style>
+
+    <style name="EstiloAceptar" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/verdeMedio</item>
+        <item name="android:backgroundTint">@color/verdeMedio</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="EstiloCancelar" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:enabled">false</item>
+        <item name="android:textColor">@color/verdeMedio</item>
+    </style>
+
+    <style name="Widget.AppTheme.MaterialCalendar.HeaderToggleButton" parent="Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- OCULTA EL JHEADER -->
+    <style name="Widget.AppTheme.MaterialCalendar.HeaderLayout" parent="Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Widget.AppTheme.MaterialCalendar.HeaderTitle" parent="Widget.MaterialComponents.MaterialCalendar.HeaderTitle">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- oculta la seleccion del header que habia en el el header -->
+    <style name="Widget.AppTheme.MaterialCalendar.HeaderSelection" parent="Widget.MaterialComponents.MaterialCalendar.HeaderSelection">
+        <item name="android:visibility">gone</item>
+    </style>
+
+</resources>

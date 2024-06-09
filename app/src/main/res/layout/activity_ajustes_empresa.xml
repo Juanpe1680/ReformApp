@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_fondo">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_ajustes" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+
+            <EditText
+                android:id="@+id/et_NombreEmpresaMod"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/jackinpunt"
+                android:hint="@string/RegistroE_Hint_Nombre"
+                android:inputType="text"
+                android:textColor="@color/azulClaro"
+                android:textColorHint="#e0e0e0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_TelfEmpresaMod"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:fontFamily="@font/jackinpunt"
+                android:hint="@string/RegistroU_Hint_Telf"
+                android:inputType="phone"
+                android:textColor="@color/azulClaro"
+                android:textColorHint="#e0e0e0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_NombreEmpresaMod" />
+
+            <EditText
+                android:id="@+id/et_DirEmpresaMod"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:fontFamily="@font/jackinpunt"
+                android:hint="@string/RegistroE_Hint_DirLocalidad"
+                android:inputType="text"
+                android:textColor="@color/azulClaro"
+                android:textColorHint="#e0e0e0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_TelfEmpresaMod" />
+
+            <ImageView
+                android:id="@+id/iv_logoEmpresaMod"
+                android:layout_width="240dp"
+                android:layout_height="194dp"
+                android:layout_marginTop="25dp"
+                android:clickable="true"
+                android:contentDescription="Logo de la empresa al registrarse"
+                android:src="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_DirEmpresaMod" />
+
+            <EditText
+                android:id="@+id/et_PassEmpresaMod"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:fontFamily="@font/jackinpunt"
+                android:hint="@string/RegistroE_Hint_PassE"
+                android:inputType="textPassword"
+                android:textColor="@color/azulClaro"
+                android:textColorHint="#e0e0e0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_logoEmpresaMod" />
+
+            <EditText
+                android:id="@+id/et_repPassEmpresaMod"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:fontFamily="@font/jackinpunt"
+                android:hint="@string/RegistroE_Hint_RepPassE"
+                android:inputType="textPassword"
+                android:textColor="@color/azulClaro"
+                android:textColorHint="#e0e0e0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_PassEmpresaMod" />
+
+            <Button
+                android:id="@+id/bt_ModEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#4a9d9c"
+                android:fontFamily="@font/cinzel_font"
+                android:onClick="modificarUsuario"
+                android:text="@string/Ajustes_Boton"
+                android:textColor="#afffff"
+                android:textSize="16sp"
+                app:cornerRadius="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_repPassEmpresaMod" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        android:onClick="mensajeAyuda"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_ayuda" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
