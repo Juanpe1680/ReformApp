@@ -20,8 +20,6 @@ public class ConexionBBDD {
     private static final String USUARIO = "postgres";
     private static final String PASSWORD = "admin";
 
-
-
     // Metodo para conectarnos a la BD
     public Connection conectarBD() throws SQLException {
         try {
